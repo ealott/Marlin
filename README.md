@@ -18,7 +18,7 @@ All of these values can also be changed manually if desired using the M666 comma
 
 The following G-Code commands are have been added to the standard marlin firmware:
 
-- G30 - This command is used to perform reporting and auto-calibration of a delta printer and has several options, as follows:
+- `G30` - This command is used to perform reporting and auto-calibration of a delta printer and has several options, as follows:
 ```
 G30	Probe bed and produce a report of the current state of the printer, e.g.:
 Z-Tower		Endstop Offsets
