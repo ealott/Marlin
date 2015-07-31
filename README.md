@@ -32,18 +32,19 @@ X-Tower	Y-Tower	Diag Rod: 224.5935
 
 This option does not change any settings, but is useful when manually calibrating a printer, using the M666 command to change values.
 
-- G30 Xnn Ynn - Probe bed at specified X,Y point and show z-height and delta carriage positions, e.g.:
+- `G30 Xnn Ynn` - Probe bed at specified X,Y point and show z-height and delta carriage positions, e.g.:
+```
 Bed Z-Height at X:30.00 Y:30.00 = 0.0000
 Carriage Positions: [176.40, 207.77, 209.52]
-
-- G30 A	Start auto-calibration. This will attempt to calibrate the printer,  adjusting all 
+```
+- `G30 A` - Start auto-calibration. This will attempt to calibrate the printer,  adjusting all 
 	parameters automatically, and will repeat the bed probing sequence show above 
 	several times adjusting each time until calibration is complete. 
-	It is recommended that you use M502 to load default values and then M500 to save 
+	It is recommended that you use `M502` to load default values and then `M500` to save 
 	them prior to starting the auto-calibration.
 
      	To save the settings after the auto-calibration is complete, use the M500 command.
-- M666 L - List all current configuration values , e.g.:
+- `M666 L` - List all current configuration values , e.g.:
 ```
 Current Delta geometry values:
 X (Endstop Adj): -3.05
@@ -67,7 +68,7 @@ Or to change the Z-Height to 350.5 mm:
 Commands can also be combined, e.g. to set endstop values:
 `M666 X-2.04 Y-1.02 Z-1.52`
 
-All of these values can be saved/loaded to/from EEPROM using standard M500/M501 G-Code commands (to save the settings at any time just type `M500`). This makes manual configuration of a printer much easier as there is no longer a requirement to edit the configuration.h file and re-upload firmware for each time a change needs to be made.
+All of these values can be saved/loaded to/from EEPROM using standard `M500/M501` G-Code commands (to save the settings at any time just type `M500`). This makes manual configuration of a printer much easier as there is no longer a requirement to edit the configuration.h file and re-upload firmware for each time a change needs to be made.
 
 Configuration.h now includes the following additional parameters:
 Set start and end locations used to deploy the Z-Probe:
