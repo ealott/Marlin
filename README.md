@@ -14,7 +14,7 @@ The auto-calibration can now automatically adjust the following printer configur
 -	Z-Height Correction
 -	Tower Position Error Correction (independent Radius and Radial position adjustment for each tower)
 
-All of these values can also be changed manually if desired using the M666 command.
+All of these values can also be changed manually if desired using the `M666` command.
 
 The following G-Code commands are have been added to the standard marlin firmware:
 
